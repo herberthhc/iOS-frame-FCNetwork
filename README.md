@@ -22,7 +22,7 @@ pod 'FCNetwork'
 
 ## Author
 
-ltyfantasy@163.com, liutianyu@lhjksaas.com
+LeoLiu, ltyfantasy@163.com
 
 ## License
 
