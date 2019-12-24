@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FCNetwork'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '基于AFNetworking封装的网络库，支持缓存，过程拦截'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.public_header_files = 'FCNetwork/FCNetwork.h'
-  s.private_header_files = 'FCNetwork/**/*.h'
+  s.public_header_files = 'FCNetwork/**/*.h'
   s.source_files = 'FCNetwork/**/*'
   
   s.dependency 'AFNetworking', '~> 3.2.0'
