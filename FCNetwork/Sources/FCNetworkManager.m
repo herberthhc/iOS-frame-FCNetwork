@@ -2,8 +2,8 @@
 //  FCNetworkManager.m
 //  FCNetwork
 //
-//  Created by 刘天羽 on 2019/12/23.
-//
+//  Created by LeoLiu on 2019/12/23.
+//  Copyright (c) 2019 ForestCocoon ltyfantasy@163.com. All rights reserved.
 
 #import "FCNetworkManager.h"
 #import "FCNetworkRequest.h"

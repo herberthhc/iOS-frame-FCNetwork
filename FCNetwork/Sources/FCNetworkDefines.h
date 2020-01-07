@@ -2,8 +2,8 @@
 //  FCNetworkDefines.h
 //  Pods
 //
-//  Created by 刘天羽 on 2019/12/25.
-//
+//  Created by LeoLiu on 2019/12/25.
+//  Copyright (c) 2019 ForestCocoon ltyfantasy@163.com. All rights reserved.
 
 #ifndef FCNetworkDefines_h
 #define FCNetworkDefines_h

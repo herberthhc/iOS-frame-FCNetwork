@@ -2,13 +2,13 @@
 //  FCNetworkManager.h
 //  FCNetwork
 //
-//  Created by 刘天羽 on 2019/12/23.
-//
+//  Created by LeoLiu on 2019/12/23.
+//  Copyright (c) 2019 ForestCocoon ltyfantasy@163.com. All rights reserved.
 
 #import <Foundation/Foundation.h>
 #import "FCNetworkDefines.h"
 
-@class FCNetworkRequest, FCNetworkParser;
+@class FCNetworkRequest, FCNetworkParser, AFHTTPSessionManager;
 @protocol AFMultipartFormData, FCNetworkInterceptor;
 
 #pragma mark - Defines
@@ -35,6 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)manager;
 
+// --------------- 基础设置 ---------------
+
 /**
     设置日志等级，仅在DEBUG模式下启用
     只有高于且等于level的日志才会被打印
@@ -51,6 +53,25 @@ NS_ASSUME_NONNULL_BEGIN
     设置拦截器，具体业务需要实现拦截协议
  */
 - (void)setInterceptor:(id<FCNetworkInterceptor>)interceptor;
+
+// --------------- Session管理 ---------------
+
+/**
+    添加AFHTTPSessionManager
+ */
+- (void)addSessionManager:(AFHTTPSessionManager*)sessionManager withIdentifier:(NSString*)identifier;
+
+/**
+    移除AFHTTPSessionManager
+ */
+- (void)removeSessionManagerWithIdentifier:(NSString*)identifier;
+
+/**
+    获取指定identifier的AFHTTPSessionManager
+ */
+- (AFHTTPSessionManager*)sessionManagerWithIdentifier:(NSString*)identifier;
+
+// --------------- 请求 ---------------
 
 /**
     发起普通网络请求
