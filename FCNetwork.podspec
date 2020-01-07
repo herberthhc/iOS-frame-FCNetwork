@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FCNetwork'
-  s.version          = '0.9.0'
+  s.version          = '0.9.1'
   s.summary          = '基于AFNetworking封装的网络库，支持缓存，过程拦截'
 
 # This description is used to generate tags and improve search results.
