@@ -9,7 +9,6 @@
 #define FCNetwork_h
 
 #import "FCNetworkManager.h"
-#import "FCNetworkTask.h"
 #import "FCNetworkRequest.h"
 #import "FCNetworkParser.h"
 #import "FCNetworkError.h"
